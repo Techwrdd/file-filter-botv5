@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://telegra.ph/file/00bdb8145479df9436ae1.jpg" alt="Ajax Techz">
-</p>
 <h1 align="center">
   <b>file-filter-bot</b>
 </h1>
@@ -51,7 +48,7 @@ You can deploy this bot anywhere.
 <p>
 <br>
 
-<a href="https://heroku.com/deploy?template=https://github.com/Maliksahid786/file-filter-botv5">
+<a href="https://heroku.com/deploy?template=https://github.com/Techwrdd/file-filter-botv5">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
