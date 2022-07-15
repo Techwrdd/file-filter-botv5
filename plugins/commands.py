@@ -26,7 +26,7 @@ async def start(client, message):
                 InlineKeyboardButton('❇️ Add Me To Your Groups ❇️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],
             [
-                InlineKeyboardButton('♻️ Updates Channel ♻️', url='https://t.me/m_house786')
+                InlineKeyboardButton('♻️ Updates Channel ♻️', url='https://t.me/cinemica')
             ],
             [
                 InlineKeyboardButton('❇️ Help ❇️', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -47,15 +47,15 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('❇️ Add Me To Your Groups ❇️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
-            InlineKeyboardButton('☎️CONTACT ME', url='https://t.me/sahid_malik'),
-            InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/m_house786')
+            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/cinemica'),
+            InlineKeyboardButton('☎️CONTACT ME', url='https://t.me/chatwrd_bot'),
+            InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/cinemica')
             ],[
             InlineKeyboardButton('♻️ Help ♻️', callback_data='help'),
-            InlineKeyboardButton('🌷Join my group', url='https://t.me/+gXuMKXOWm1UyOTdl'),
+            InlineKeyboardButton('⚡Join my group', url='https://t.me/+Spzsxjag4AEwN2U1'),
             InlineKeyboardButton('♻️ About ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
+            InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://www.youtube.com/channel/UC2_U9WYQaopjXGZ7n9HbN3Q')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -88,7 +88,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" ♻️ Try Again ♻️", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**⚠️ Please Join My Updates Channel to use this Bot...   ━━━━━━━━━━━━━━━━━                     हमारे निचे दिए गये update चैनल को join करे जब तक आप हमारे update चैनल को join नहीं करेंगे तब तक bot आपको मूवी नहीं देगा. 👇👇👇 **",
+            text="**⚠️ Please Join My Updates Channel to use this Bot...👇👇👇 **",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -97,15 +97,15 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('✳️ Add Me To Your Groups ✳️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
-            InlineKeyboardButton('☎️ CONTACT ME', url='https://t.me/sahid_malik'),
-            InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/m_house786')
+            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/cinemica'),
+            InlineKeyboardButton('☎️ CONTACT ME', url='https://t.me/chatwrd_bot'),
+            InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/cinemica')
             ],[
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('🌷Join my group', url='https://t.me/+gXuMKXOWm1UyOTdl'),
+            InlineKeyboardButton('♻️ HELP ♻️', callback_data='help'),
+            InlineKeyboardButton('⚡Join my group', url='https://t.me/+Spzsxjag4AEwN2U1'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
+            InlineKeyboardButton('✅ Subscribe my YouTube channel  ✅', url='https://www.youtube.com/channel/UC2_U9WYQaopjXGZ7n9HbN3Q')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -259,7 +259,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('♻️ 𝐉𝐨𝐢𝐧 𝙂𝙧𝙤𝙪𝙥 ', url="https://t.me/+gXuMKXOWm1UyOTdl")
+                    InlineKeyboardButton('♻️ 𝐉𝐨𝐢𝐧 𝙂𝙧𝙤𝙪𝙥 ', url="https://t.me/+Spzsxjag4AEwN2U1")
                 ]
             ]
         )
