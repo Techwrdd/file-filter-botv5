@@ -111,7 +111,7 @@ async def next_page(bot, query):
             [InlineKeyboardButton("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")]
         )
     btn.insert(0, [
-        InlineKeyboardButton(text="⚠️ 𝐉𝐨𝐢𝐧 𝐌𝐨𝐯𝐢𝐞𝐬 Group ⚠️", url="https://t.me/+gXuMKXOWm1UyOTdl")
+        InlineKeyboardButton(text="⚠️ 𝐉𝐨𝐢𝐧 𝐌𝐨𝐯𝐢𝐞𝐬 Group ⚠️", url="https://t.me/+Spzsxjag4AEwN2U1")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -412,15 +412,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('✳️ Add Me To Your Groups ✳️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/+ZeZNvt43B4o3ZmJl'),
-            InlineKeyboardButton('☎️ CONTACT ME', url='https://t.me/sahid_malik'),
-            InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/m_house786')
+            InlineKeyboardButton('💠 CHANNEL 💠', url='https://t.me/cinemica'),
+            InlineKeyboardButton('☎️ CONTACT ME', url='https://t.me/chatwrd_bot'),
+            InlineKeyboardButton('💠 UPDATES 💠', url='https://t.me/cinemica')
             ],[
             InlineKeyboardButton('♻️ Help ♻️', callback_data='help'),
-            InlineKeyboardButton('🌷Join my group', url='https://t.me/+gXuMKXOWm1UyOTdl'),
+            InlineKeyboardButton('🌷Join my group', url='https://t.me/+Spzsxjag4AEwN2U1'),
             InlineKeyboardButton('♻️ About ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('✅ Subscribe my YouTube channel ✅', url='https://youtube.com/channel/UCPaHDqWf3D3w2nxb8p3sr4A')
+            InlineKeyboardButton('✅ Subscribe my YouTube channel ✅', url='https://www.youtube.com/channel/UC2_U9WYQaopjXGZ7n9HbN3Q')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -435,10 +435,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝗔𝘂𝘁𝗼 𝗙𝗶𝗹𝘁𝗲𝗿', callback_data='autofilter')
         ], [
             InlineKeyboardButton('𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻𝘀', callback_data='coct'),
-            InlineKeyboardButton('𝗘𝘅𝘁𝗿𝗮 𝗠𝗼𝗱𝗲𝘀', callback_data='extra')
-        ], [
-            InlineKeyboardButton('🏠 𝗛𝗼𝗺𝗲 🏠', callback_data='start'),
-            InlineKeyboardButton('⚚ 𝗦𝘁𝗮𝘁𝘀 ⚚', callback_data='stats')
+            InlineKeyboardButton('🏠 𝗛𝗼𝗺𝗲 🏠', callback_data='start')
+
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -676,15 +674,15 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}", callback_data="pages"),
+            [InlineKeyboardButton(text=f"𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
     btn.insert(0, [
-        InlineKeyboardButton(text="⚠️ 𝐉𝐨𝐢𝐧 𝐌𝐨𝐯𝐢𝐞𝐬 𝙂𝙧𝙤𝙪𝙥 ⚠️", url="https://t.me/+gXuMKXOWm1UyOTdl")
+        InlineKeyboardButton(text="⚠️ 𝐉𝐨𝐢𝐧 𝐌𝐨𝐯𝐢𝐞𝐬 𝙂𝙧𝙤𝙪𝙥 ⚠️", url="https://t.me/+Spzsxjag4AEwN2U1")
     ])
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -789,7 +787,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. ━━━━━━━━━━━━━━━━━       दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें 👇👇👇 ",
+    await msg.reply("CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE..👇👇👇",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
